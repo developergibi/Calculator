@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background-color: #cacaca;
+}
+
+.calculator {
+    border: 4px double #070707;
+    box-shadow: 1px 1px 1px #000000;
+    height: auto;
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@font-face {
+    font-family: "Calculator";
+    src: local("Calculator"),
+        url("Calculator.ttf");
+}
+
+.calculator-display {
+    width: 100%;
+    height: 65px;
+    font-family: "Calculator";
+    font-size: 60px;
+    background-color: #141414;
+    color: #f1f1f1;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    border: none;
+    text-align: right;
+}
+
+button {
+    height: 85px;
+    border-radius: 20px 5px 20px 5px;
+    background-color: #de5900;
+    border: 1px solid black;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #ffffff;
+    box-shadow: 3px 3px 5px #000000;
+}
+
+button:hover {
+    box-shadow: 2px 2px 5px #9a9a9a;
+    font-size: 25px;
+    color: #f1f1f1;
+}
+
+button:active {
+    border: none;
+    box-shadow: 2px 2px 5px #0084ff;
+    background-color: #de5900d2;
+}
+
+.calculator-keypad {
+    background-color: #2a2a2a;
+    display: grid;
+    padding: 10px;
+    grid-gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.equals {
+    margin: 10px 0px;
+    height: 60px;
+    font-size: 45px;
+    box-shadow: 2px 2px 5px #000000 inset;
+    background-color: #00a4d1;
+    grid-area: 1/1/1/5;
+}
+
+.equals:hover {
+    box-shadow: 2px 2px 5px #dddddd;
+    font-size: 55px;
+    color: #f1f1f1;
+}
+
+.equals:active {
+    border: none;
+    box-shadow: 2px 2px 5px #1aff00;
+    background-color: #0280a3;
+}
+
+.operator {
+    font-size: 25px;
+    background-color: #67ba00;
+    box-shadow: 2px 3px 1px #f1f1f1 inset;
+}
+
+.operator:hover {
+    box-shadow: 2px 2px 5px #9a9a9a;
+    font-size: 40px;
+}
+
+.operator:active {
+    border: none;
+    box-shadow: 2px 2px 5px #0084ff;
+    background-color: #66ba00cd;
+}
+
+.delete {
+    background-color: #ff2c2c;
+    box-shadow: 3px 3px 4px #000000 inset;
+}
+
+.delete:hover {
+    box-shadow: 2px 2px 5px #9a9a9a;
+    font-size: 25px;
+    color: #f1f1f1;
+}
+
+.delete:active {
+    border: none;
+    box-shadow: 2px 2px 5px #ffffff;
+    background-color: #ff0000;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Calculator</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input type="text" id="screen" class="calculator-display" placeholder="0" disabled>
+        <hr />
+        <div class="calculator-keypad">
+
+            <button type="button" onclick="equals()" class="equals"  value="=">=</button>
+
+            <button type="button" name="fig" class="figure" value="7">7</button>
+            <button type="button" name="fig" class="figure" value="8">8</button>
+            <button type="button" name="fig" class="figure" value="9">9</button>
+            <button type="button" name="fig" class="operator" value="/">&divide;</button>
+
+            <button type="button" name="fig" class="figure" value="4">4</button>
+            <button type="button" name="fig" class="figure" value="5">5</button>
+            <button type="button" name="fig" class="figure" value="6">6</button>
+            <button type="button" name="fig" class="operator" value="*">&times;</button>
+
+            <button type="button" name="fig" class="figure" value="1">1</button>
+            <button type="button" name="fig" class="figure" value="2">2</button>
+            <button type="button" name="fig" class="figure" value="3">3</button>
+            <button type="button" name="fig" class="operator" value="-">-</button>
+
+            <button type="button" onclick="ac()" class="delete" value="clear">Del</button>
+            <button type="button" name="fig" class="figure" value="0">0</button>
+            <button type="button" name="fig" class="decimal" value=".">.</button>
+            <button type="button" name="fig" class="operator" value="+">+</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
